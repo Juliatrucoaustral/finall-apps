@@ -1,0 +1,159 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Especiales
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <ion-list>
+    <ion-item>
+      <ion-select aria-label="fruit" placeholder="Seleccionar region" [(ngModel)]="selectedFruit">
+        <ion-select-option value="apples">America</ion-select-option>
+        <ion-select-option value="oranges">Europa</ion-select-option>
+        <ion-select-option value="bananas">Asia</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  
+  <ion-card *ngIf="selectedFruit === 'apples'">
+    <ion-card-content>
+
+      <ion-row>
+        <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/38']">
+        <img alt="Leyendas de america latina" src="https://http2.mlstatic.com/D_NQ_NP_730282-MLA48393378657_112021-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Leyendas de america latina</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/40']">
+        <img alt="Tin tin en america" src="https://http2.mlstatic.com/D_NQ_NP_957849-MLA72920131670_112023-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Tin tin en america</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/39']">
+        <img alt="Washingthon dc" src="https://http2.mlstatic.com/D_NQ_NP_801572-MLA28198557749_092018-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Washingthon</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/41']">
+        <img alt="La voz del gran jefe" src="https://http2.mlstatic.com/D_NQ_NP_959993-MLA70766473873_072023-O.webp" />
+        <ion-card-header>
+          <ion-card-title>La voz del gran jefe</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    </ion-row> 
+
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card *ngIf="selectedFruit === 'oranges'">
+    <ion-card-content>
+
+      <ion-row>
+        <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/43']">
+        <img alt="Historia de europa" src="https://http2.mlstatic.com/D_NQ_NP_900061-MLA70454915413_072023-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Historia de europa</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/44']">
+        <img alt="Viena" src="https://http2.mlstatic.com/D_NQ_NP_664352-MLA28097510387_092018-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Viena</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/45']">
+        <img alt="Madrid" src="https://http2.mlstatic.com/D_NQ_NP_653972-MLA43542088031_092020-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Madrir</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/46']">
+        <img alt="Florencia" src="https://http2.mlstatic.com/D_NQ_NP_782437-MLA25913493176_082017-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Florencia</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card *ngIf="selectedFruit === 'bananas'">
+    <ion-card-content>
+      
+      <ion-row>
+        <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/48']">
+        <img alt="Israel" src="https://http2.mlstatic.com/D_NQ_NP_761681-MLA70370111639_072023-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Israel</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/49']">
+        <img alt="China" src="https://http2.mlstatic.com/D_NQ_NP_632209-MLA26125066179_102017-O.webp" />
+        <ion-card-header>
+          <ion-card-title>China</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/50']">
+        <img alt="Un viaje asia el interior" src="https://http2.mlstatic.com/D_NQ_NP_731416-MLA45669495005_042021-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Madrir</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+      <ion-col size="6">
+      <ion-card id="ion-card" [routerLink]="['/productos/51']">
+        <img alt="Tailandia" src="https://http2.mlstatic.com/D_NQ_NP_914651-MLA43542088187_092020-O.webp" />
+        <ion-card-header>
+          <ion-card-title>Tailandia</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+   

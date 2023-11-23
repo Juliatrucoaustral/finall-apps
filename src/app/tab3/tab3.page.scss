@@ -1,0 +1,38 @@
+.contenedor-flex {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+  font-size: 25px;
+  
+  }
+  
+  ion-icon {
+    margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+  
+  }
+
+  .boton-comprar {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+  font-size: 25px;
+  }
+  
+  #entrega{
+    margin-top: 0%;
+  }
+  
+  .enviar-selected {
+    color: white;
+    background-color: #005aaa;  // Color cuando se selecciona "Enviar"
+  }
+
+  .retiro-selected {
+    color: white;
+    background-color: #005aaa;
+      // Color cuando se selecciona "Retiro en el local"
+  }
+  
+  #botones{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }

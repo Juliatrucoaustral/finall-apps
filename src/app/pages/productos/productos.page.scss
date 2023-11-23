@@ -1,0 +1,23 @@
+img {
+    border-radius: 10px; 
+    height: 400px;
+    width: 250px;
+    object-fit: cover;
+    margin-left: 100px;
+  }
+
+  .contenedor-flex {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+  font-size: 25px;
+  
+  }
+  
+  ion-icon {
+    margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+  
+  }
+  
+  ion-button{
+    margin-right: 50px;
+  }
